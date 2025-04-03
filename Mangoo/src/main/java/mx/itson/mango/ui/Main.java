@@ -17,10 +17,12 @@ public class Main {
         Televisión tv = new Televisión("Samsumg","XH256", "NEGRO", 55,35);
         Computadora pc = new Computadora("Asus", "Ninja200","blanca",128,1024);
         
-            tv.encender(84);
+            System.out.println(tv.encender(84));
             tv.cambiarVolumen(62);
             
             pc.cambiarEspacio(60);
+            
     }
     
 }
+

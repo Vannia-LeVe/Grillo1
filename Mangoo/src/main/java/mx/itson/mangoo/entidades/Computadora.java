@@ -22,16 +22,28 @@ public class Computadora extends DispositivoElectronico {
         this.espacioDisco= espacioDisco;
     }
    
-    //cambiar el espacio disco a traves del metodo
+    //cambiar el espacio disco a traves del metodo 
         public String cambiarEspacio(int espacio){
-        this.espacioDisco= espacioDisco; 
-        double espaciorestante= espacioDisco - espacio;
-        return "el espacio restante es de" + espaciorestante;
+            
+            if(espacio>espacioDisco){
+            return "el archivo accede el espacio del disco";
+            }else {
+             this.espacioDisco= espacio;
+             return "el valor debe ser mayor o igual a 100";
+            }
+        }
         
+       
+    @Override
+       public double calcularDepreciación(double precio){
+            return  precio* 0.12;
+            
             
     
+        }
     }
-}
+
+
 
 
 

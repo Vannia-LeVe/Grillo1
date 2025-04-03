@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author alumnog
  */
-public class TelevisiónTest {
+public class ComputadoraTest {
     
-    public TelevisiónTest() {
+    public ComputadoraTest() {
     }
     
     @BeforeAll
@@ -37,15 +37,15 @@ public class TelevisiónTest {
     }
 
     /**
-     * Test of cambiarVolumen method, of class Televisión.
+     * Test of cambiarEspacio method, of class Computadora.
      */
     @Test
-    public void testCambiarVolumen() {
-        System.out.println("cambiarVolumen");
-        int cantidad = 84;
-        Televisión instance = new Televisión("Samsumg","XH256", "NEGRO", 55,35);
-        String expResult = "Se cambio el volumen a 84";
-        String result = tv.cambiarVolumen(cantidad);
+    public void testCambiarEspacio() {
+        System.out.println("cambiarEspacio");
+        int espacio = 0;
+        Computadora instance = new cp();
+        String expResult = "";
+        String result = instance.cambiarEspacio(espacio);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
