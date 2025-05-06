@@ -4,13 +4,21 @@
  */
 package mx.itson.grillo.entities;
 
+import java.util.List;
+import mx.itson.grillo.enums.WeatherStatus;
+
 /**
  *
  * @author alumnog
  */
 public class Weather {
+    
     private String city;
     private int temperature;
-    private 
+    private int humidity;
+    private WeatherStatus status;
+    private List<Forecast>forcast;
+    
+    
     
 }

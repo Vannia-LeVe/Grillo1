@@ -4,10 +4,19 @@
  */
 package mx.itson.grillo.entities;
 
+import java.util.Date;
+import mx.itson.grillo.enums.WeatherStatus;
+
 /**
  *
  * @author alumnog
  */
 public class Forecast {
+    private Date day;
+    private int maxTemperature;
+    private int minTemperature;
+    private WeatherStatus status;
+
+    
     
 }
