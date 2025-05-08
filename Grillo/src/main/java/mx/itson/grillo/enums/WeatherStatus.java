@@ -4,12 +4,21 @@
  */
 package mx.itson.grillo.enums;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  *
  * @author alumnog
  */
 public enum WeatherStatus {
-    SUNNY,
+    @SerializedName("1")
+            SUNNY,
+        @SerializedName("2")
+
     SNOW,
-    RAIN
+            @SerializedName("3")
+
+    RAIN,
+                @SerializedName("4")
+    OTHER
 }
